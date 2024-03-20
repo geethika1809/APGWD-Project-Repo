@@ -1686,18 +1686,18 @@ blockquote:after {
   width: 40%;
 }
 
-.jd-mail {
-  justify-content: center; /* For flex containers */
-  text-align: center;
+/* .jd-mail {
+  justify-content: center; For flex containers */
+  /* text-align: center;
   padding: 20px;
   margin: 20px auto;
   height: auto;
   width: 80%;
   background-color: #008778;
   border-radius: 10px;
-}
+} */
 
-.jd-mail button {
+/* .jd-mail button {
   background-color: #13a421;
   border-radius: 25px;
   width: 40%;
@@ -1705,18 +1705,62 @@ blockquote:after {
   font: 12px sans-serif;
   padding: 10px;
   margin: 10px;
-}
+} */
 
-.jd-mail ul {
+/* .jd-mail ul {
   background-color: rgb(218, 206, 206);
   border-radius: 10px;
   padding: 5px;
-}
-.jd-mail li {
+} */
+/* .jd-mail li {
   margin: 10px;
-  padding: 3px;
+  padding: 3px; */
   /* border-right: 1px solid #000; */
+/* } */
+
+
+.jd-mail {
+  justify-content: center; /* For flex containers */
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px; /* Set maximum width */
+  width: 90%; /* Set width to a percentage */
+  background-color: #008778;
+  border-radius: 10px;
 }
+
+/* Adjust button styles for responsiveness */
+.jd-mail button {
+  background-color: #13a421;
+  border-radius: 25px;
+  width: 60%; /* Make buttons take full width */
+  font-size: 14px; /* Increase font size for better readability on smaller screens */
+  padding: 20px;
+  margin: 5px 0; /* Adjust vertical margin */
+  transition: background-color 0.3s ease-in-out; /* Add transition effect */
+}
+
+/* Hover effect for buttons */
+.jd-mail button:hover {
+  background-color: #0c7a14; /* Change background color on hover */
+}
+
+/* Adjust list styles for responsiveness */
+.jd-mail ul {
+  background-color: rgb(218, 206, 206);
+  border-radius: 10px;
+  padding: 50px; /* Increase padding for better spacing */
+}
+
+.jd-mail li {
+  margin: 5px 0; /* Adjust vertical margin */
+  padding: 20px; /* Increase padding for better spacing */
+}
+
+
+
+
 
 .Admin-title {
   /* display: flex; */
@@ -2094,4 +2138,91 @@ blockquote:after {
 
 .man-button-container button:hover {
   background-color: #dce0a0; /* Adjust button hover background color */
+}
+
+
+
+.report .report {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.report .dashboard-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.report .dropdown-container {
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+}
+
+.report .dropdown-container label {
+  margin-right: 10px;
+  color: #0e427d; /* Color for the label */
+  margin-top: 30px;
+
+}
+.report .gojo{
+  font-weight: 1000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.report .dropdown-container select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 30px;
+  background-color: #e0d2d276;
+}
+
+.report .download-container {
+  text-align: center;
+  margin-top: 20px; /* Spacing between the table and the button */
+}
+
+.report .download-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.report .download-button:disabled {
+  background-color: #45a049;
+  cursor: not-allowed;
+}
+
+.report .download-button:hover {
+  background-color: #45a049;
+}
+
+.report .data-table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+.report .data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.report .data-table th {
+  background-color: #0e427d; /* Color for table header */
+  color: white; /* Text color for table header */
 }

@@ -70,7 +70,6 @@ const Jdmail = () => {
     <div>
       <Navbar/>
       <div className="jd-mail">
-      <button onClick={sendMailToAll}>Send Mail to All</button>
       <ul>
         {data.map((item, index) => (
           <li key={index}>
@@ -85,7 +84,9 @@ const Jdmail = () => {
             </div>
           </li>
         ))}
-      </ul></div>
+      </ul>      
+      <button onClick={sendMailToAll}>Send Mail to All</button>
+      </div>
       <Foot/>
     </div>
   );
